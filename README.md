@@ -27,7 +27,7 @@ Input:
 
 Output: 
 
-true
+True
 
 Explanation: Nodes in linkedlist form a subpath in the binary Tree. 
 
@@ -41,7 +41,7 @@ Input:
 
 Output: 
 
-false
+False
 
 Explanation: There is no path in the binary tree that contains all the elements of the linked list from head.
 
@@ -55,6 +55,6 @@ Input:
 
 Output: 
 
-true
+True
 
 
