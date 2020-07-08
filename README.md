@@ -1,4 +1,4 @@
-# dynamic-programming #linked list # binary tree
+# Linked list # Binary tree
 
 Ravi is solving a challenge in which the question is given as follows :
 
