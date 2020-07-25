@@ -19,7 +19,7 @@ def linkedList(llist):
     head.next=None
     return head1
 
-def binaryTree(arr, root, i, n):
+def insertLevelOrder(arr, root, i, n):
     if i < n: 
         temp = TreeNode(arr[i])  
         root = temp 
@@ -35,6 +35,8 @@ def isSubPath(head, root) :
         
     
     def dfs(root, path):
+        if not root:
+            return False
         if target in path:
             return True
             
@@ -53,9 +55,9 @@ def isSubPath(head, root) :
             
     return dfs(root, str(root.val))
     
-tree = input.split(',')
+tree = input().split(',')
 llist= input().split(',')
 head = linkedList(llist)
 root1=None
-root=binaryTree(tree, root1,0,len(tree))
-print(isSubPath(header,root))
+root=insertLevelOrder(tree, root1,0,len(tree))
+print(not isSubPath(head,root))
